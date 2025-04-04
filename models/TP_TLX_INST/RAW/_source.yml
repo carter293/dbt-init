@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: RAW_TP_TLX_INST 
+    database: DEV_TP_TLX_INST_DB
+    schema: RAW
+    tables:
+      - name: INTERSTATE_JOBS
