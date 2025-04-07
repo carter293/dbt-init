@@ -24,12 +24,12 @@
 - **Encouragement:** Keep iterating and refactoring—modern data stacks are built on continuous improvement.
 
 ### Example Model File
-|||sql
+```sql
 -- Example: models/customers.sql
 SELECT 
     id,
     name,
     email
 FROM {{ ref('raw_customers') }}
-|||
+```
 

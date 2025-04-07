@@ -1,3 +1,6 @@
+{{ config(materialized='ephemeral') }}
+
+
 SELECT 
       CONCAT(YEAR(DATE), '-', MONTH(DATE)) AS YEAR_MONTH
     , SUM(PRICE_NETT) as TOTAL_REVENUE

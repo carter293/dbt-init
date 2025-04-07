@@ -23,8 +23,12 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 models:
+  +materialized: table
   dbt_init:
-    TP_TLX_INST:
+    BU_NAME:
       CLEAN: 
         +schema: CLEAN
+        +database: DEV_TP_TLX_INST_DB
+      ENRICHED: 
+        +schema: ENRICHED
         +database: DEV_TP_TLX_INST_DB
